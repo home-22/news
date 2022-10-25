@@ -1,5 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:news/widgets/Business.dart';
 import 'package:news/widgets/NavigatorBar.dart';
+import 'package:news/widgets/Sport.dart';
+import 'package:news/widgets/Tech.dart';
+
+import 'package:news/widgets/World.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -84,10 +89,21 @@ class HomePage extends StatelessWidget {
                     child: Tab(
                       child: Text('Tech'),
                     ),
-                  )
+                  ),
                 ],
               ),
             ),
+            Flexible(
+              flex: 1,
+              child: TabBarView(children: [
+                Container(color: Colors.amber),
+                
+                Worild(),
+                Business(),
+                Sport(),
+                Tech(),
+              ]),
+            )
           ],
         ),
         bottomNavigationBar: const NavigatorBar(),
