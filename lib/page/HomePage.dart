@@ -98,7 +98,7 @@ class HomePage extends StatelessWidget {
               child: TabBarView(children: [
                 Container(color: Colors.amber),
                 
-                Worild(),
+                World(),
                 Business(),
                 Sport(),
                 Tech(),
