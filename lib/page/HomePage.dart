@@ -95,15 +95,16 @@ class HomePage extends StatelessWidget {
             ),
             Flexible(
               flex: 1,
-              child: TabBarView(children: [
-                Container(color: Colors.amber),
-                
-                World(),
-                Business(),
-                Sport(),
-                Tech(),
-              ]),
-            )
+              child: TabBarView(
+                children: [
+                  Container(color: Colors.amber),
+                  const World(),
+                  const Business(),
+                  const Sport(),
+                  const Tech(),
+                ],
+              ),
+            ),
           ],
         ),
         bottomNavigationBar: const NavigatorBar(),

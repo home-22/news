@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:news/widgets/Icons_World.dart';
+import 'package:news/widgets/List_World.dart';
 
 class World extends StatelessWidget {
   const World({Key? key}) : super(key: key);
@@ -66,6 +67,8 @@ class World extends StatelessWidget {
                     ],
                   ),
                   IconsWorld(),
+                  ListWorld(),
+                  ListWorld()
                 ],
               )
             ],
