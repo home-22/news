@@ -68,7 +68,6 @@ class World extends StatelessWidget {
                   ),
                   IconsWorld(),
                   ListWorld(),
-                  ListWorld()
                 ],
               )
             ],
