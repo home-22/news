@@ -26,7 +26,7 @@ class HomePage extends StatelessWidget {
                 child: Text(
                   'Welcome',
                   style: TextStyle(
-                      color: Colors.black,
+                      color: Colors.black54,
                       fontSize: 30,
                       fontWeight: FontWeight.bold),
                 ),
@@ -34,7 +34,7 @@ class HomePage extends StatelessWidget {
             ),
             leading: const Icon(
               Icons.arrow_back_ios_new,
-              color: Colors.black,
+              color: Colors.black54,
               size: 25,
             ),
             actions: const [
@@ -43,7 +43,7 @@ class HomePage extends StatelessWidget {
                 child: Icon(
                   Icons.search,
                   size: 28,
-                  color: Colors.black,
+                  color: Colors.black54,
                 ),
               ),
             ],
@@ -52,10 +52,12 @@ class HomePage extends StatelessWidget {
         body: Column(
           children: [
             Container(
-              color: Colors.amber,
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),
+                  color: Colors.black45),
               child: const TabBar(
                 isScrollable: true,
-                indicatorColor: Colors.red,
+                indicatorColor: Colors.lightBlue,
                 indicatorWeight: 5,
                 labelStyle:
                     TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
@@ -97,7 +99,7 @@ class HomePage extends StatelessWidget {
               flex: 1,
               child: TabBarView(
                 children: [
-                  Container(color: Colors.amber),
+                  Container(color: Colors.white),
                   const World(),
                   const Business(),
                   const Sport(),

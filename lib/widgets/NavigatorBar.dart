@@ -11,7 +11,7 @@ class NavigatorBar extends StatelessWidget {
       height: 60,
       padding: const EdgeInsets.symmetric(horizontal: 20),
       decoration: const BoxDecoration(
-        color: Colors.amber,
+        color: Colors.blueGrey,
         borderRadius: BorderRadius.all(Radius.circular(25)),
       ),
       child: Row(

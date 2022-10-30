@@ -19,8 +19,7 @@ class IconsWorld extends StatelessWidget {
                 height: 70,
                 width: 70,
                 decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(50),
-                    color: Colors.amber),
+                    borderRadius: BorderRadius.circular(50), color: Colors.red),
               ),
           ],
         ),

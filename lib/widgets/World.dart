@@ -18,7 +18,9 @@ class World extends StatelessWidget {
               Container(
                 height: 200,
                 width: double.infinity,
-                color: Colors.black,
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                    color: Colors.amber),
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.start,
@@ -66,8 +68,8 @@ class World extends StatelessWidget {
                       Icon(Icons.chat_outlined, size: 20)
                     ],
                   ),
-                  IconsWorld(),
-                  ListWorld(),
+                  const IconsWorld(),
+                  const ListWorld(),
                 ],
               )
             ],
