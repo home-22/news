@@ -1,5 +1,6 @@
 // ignore_for_file: file_names
 
+
 import 'package:flutter/material.dart';
 
 class NavigatorBar extends StatelessWidget {
@@ -26,9 +27,11 @@ class NavigatorBar extends StatelessWidget {
             ),
           ),
           InkWell(
-            onTap: () {},
+            onTap: () {
+              Navigator.pushNamed(context, 'Categories');
+            },
             child: const Icon(
-              Icons.content_copy_rounded,
+              Icons.category,
               size: 30,
               color: Colors.white,
             ),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:news/page/HomePage.dart';
+import 'package:news/widgets/Categories.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,6 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(cardColor: Colors.grey),
       routes: {
         '/': (context) => const HomePage(),
+        'Categories': (context) => const Categories()
       },
     );
   }
