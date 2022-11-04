@@ -12,68 +12,61 @@ class World extends StatelessWidget {
     return SingleChildScrollView(
       scrollDirection: Axis.vertical,
       child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 15),
-          child: Column(
-            children: [
-              Container(
-                height: 200,
-                width: double.infinity,
-                decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(10),
-                    color: Colors.amber),
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: const [
-                  Padding(
-                    padding: EdgeInsets.symmetric(vertical: 15),
-                    child: Text(
-                      'Bloomberg',
-                      style: TextStyle(
-                          fontSize: 15,
-                          color: Colors.grey,
-                          fontWeight: FontWeight.bold),
-                    ),
-                  ),
-                ],
-              ),
-              Column(
+        padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 15),
+        child: Column(
+          children: [
+            Container(
+              height: 200,
+              width: double.infinity,
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10), color: Colors.amber),
+            ),
+            Container(
+              margin: const EdgeInsets.all(10),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const Text(
-                    'The green-blue blooms of\n toxic algee have been found\n in Prospect Park',
-                    style: TextStyle(
-                        color: Colors.grey,
-                        fontSize: 25,
-                        fontWeight: FontWeight.bold),
-                  ),
+                  const Text('Bloomnig'),
                   const SizedBox(height: 10),
+                  const Text(
+                    'This is beautiful. I believe Flutter is the future for mobile development.\nGreat job.',
+                    style: TextStyle(fontSize: 30),
+                  ),
                   Row(
-                    children: const [
-                      Text(
+                    children: [
+                      const Text(
                         'Health',
                         style: TextStyle(color: Colors.blue),
                       ),
-                      SizedBox(width: 5),
-                      Icon(
+                      const SizedBox(width: 5),
+                      const Icon(
                         Icons.circle,
                         color: Colors.grey,
                         size: 10,
                       ),
-                      SizedBox(width: 5),
-                      Text(
+                      const SizedBox(width: 5),
+                      const Text(
                         '1m ago',
                         style: TextStyle(color: Colors.grey, fontSize: 12),
                       ),
-                      Spacer(),
-                      Icon(Icons.chat_outlined, size: 20)
+                      const Spacer(),
+                      InkWell(
+                        onTap: () {},
+                        child: const Padding(
+                          padding: EdgeInsets.all(10),
+                          child: Icon(Icons.chat_outlined, size: 20),
+                        ),
+                      ),
                     ],
                   ),
-                  const IconsWorld(),
-                  const ListWorld(),
                 ],
-              )
-            ],
-          )),
+              ),
+            ),
+            const IconsWorld(),
+            const ListWorld(),
+          ],
+        ),
+      ),
     );
   }
 }
