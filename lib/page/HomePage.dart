@@ -3,6 +3,7 @@ import 'package:news/widgets/Business.dart';
 import 'package:news/widgets/NavigatorBar.dart';
 import 'package:news/widgets/Sport.dart';
 import 'package:news/widgets/Tech.dart';
+import 'package:news/widgets/Trending.dart';
 
 import 'package:news/widgets/World.dart';
 
@@ -12,7 +13,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-      initialIndex: 1,
+      initialIndex: 0,
       length: 5,
       child: Scaffold(
         appBar: PreferredSize(
@@ -58,7 +59,7 @@ class HomePage extends StatelessWidget {
               child: const TabBar(
                 isScrollable: true,
                 indicatorColor: Colors.lightBlue,
-                indicatorWeight: 5,
+                indicatorWeight: 6,
                 labelStyle:
                     TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
                 tabs: [
