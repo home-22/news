@@ -18,45 +18,38 @@ class World extends StatelessWidget {
             Container(
               height: 200,
               width: double.infinity,
-              decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(10), color: Colors.amber),
+              decoration:
+                  BoxDecoration(borderRadius: BorderRadius.circular(10)),
             ),
             Container(
               margin: const EdgeInsets.all(10),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const Text('Bloomnig'),
+                  const Text('Exclusive'),
                   const SizedBox(height: 10),
                   const Text(
-                    'This is beautiful. I believe Flutter is the future for mobile development.\nGreat job.',
+                    "World Cup critics are 'arrogant' and 'cannot accept' Qatar as hosts, says foreign minister",
                     style: TextStyle(fontSize: 30),
                   ),
                   Row(
-                    children: [
-                      const Text(
-                        'Health',
+                    children: const [
+                      Text(
+                        "Sunday 6 November 2022 19:49, UK",
                         style: TextStyle(color: Colors.blue),
                       ),
-                      const SizedBox(width: 5),
-                      const Icon(
+                      SizedBox(width: 5),
+                      Icon(
                         Icons.circle,
                         color: Colors.grey,
                         size: 10,
                       ),
-                      const SizedBox(width: 5),
-                      const Text(
+                      SizedBox(width: 5),
+                      Text(
                         '1m ago',
                         style: TextStyle(color: Colors.grey, fontSize: 12),
                       ),
-                      const Spacer(),
-                      InkWell(
-                        onTap: () {},
-                        child: const Padding(
-                          padding: EdgeInsets.all(10),
-                          child: Icon(Icons.chat_outlined, size: 20),
-                        ),
-                      ),
+                      Spacer(),
                     ],
                   ),
                 ],

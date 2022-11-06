@@ -1,9 +1,10 @@
+// ignore_for_file: file_names
+
 import 'package:flutter/material.dart';
 import 'package:news/widgets/Business.dart';
 import 'package:news/widgets/NavigatorBar.dart';
 import 'package:news/widgets/Sport.dart';
 import 'package:news/widgets/Tech.dart';
-import 'package:news/widgets/Trending.dart';
 
 import 'package:news/widgets/World.dart';
 
@@ -13,7 +14,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-      initialIndex: 0,
+      initialIndex: 1,
       length: 5,
       child: Scaffold(
         appBar: PreferredSize(
