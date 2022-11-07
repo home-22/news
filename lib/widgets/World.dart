@@ -1,5 +1,7 @@
 // ignore_for_file: file_names
 
+
+
 import 'package:flutter/material.dart';
 import 'package:news/widgets/Icons_World.dart';
 import 'package:news/widgets/List_World.dart';
@@ -16,17 +18,22 @@ class World extends StatelessWidget {
         child: Column(
           children: [
             Container(
-              height: 200,
-              width: double.infinity,
               decoration:
                   BoxDecoration(borderRadius: BorderRadius.circular(10)),
+              child: Image.asset(
+                'images/1.jpg',
+              ),
             ),
             Container(
               margin: const EdgeInsets.all(10),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisAlignment: MainAxisAlignment.start,
                 children: [
-                  const Text('Exclusive'),
+                  const Text(
+                    'Exclusive',
+                    style: TextStyle(color: Colors.blue),
+                  ),
                   const SizedBox(height: 10),
                   const Text(
                     "World Cup critics are 'arrogant' and 'cannot accept' Qatar as hosts, says foreign minister",
@@ -35,7 +42,7 @@ class World extends StatelessWidget {
                   Row(
                     children: const [
                       Text(
-                        "Sunday 6 November 2022 19:49, UK",
+                        "Sunday 6 November 2022 19:49",
                         style: TextStyle(color: Colors.blue),
                       ),
                       SizedBox(width: 5),

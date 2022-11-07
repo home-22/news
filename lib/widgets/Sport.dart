@@ -14,45 +14,37 @@ class Sport extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
             child: Container(
-              height: 150,
-              width: double.infinity,
               decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(10), color: Colors.blue),
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: Image.asset('images/2.jpg'),
             ),
           ),
-          const SizedBox(height: 10),
-          const Text(
-            'Agents are contacting\ntrousands of foreign\ncitizens using taxi',
-            style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
-          ),
-          const SizedBox(height: 10),
-          Row(
-            children: [
-              const Padding(
-                padding: EdgeInsets.all(10),
-                child: Text(
-                  'Health',
+          Container(
+            margin: const EdgeInsets.all(10),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                const Text(
+                  'Sport',
                   style: TextStyle(color: Colors.blue),
                 ),
-              ),
-              const Icon(
-                Icons.circle,
-                color: Colors.grey,
-                size: 10,
-              ),
-              const Text(
-                '1m ago',
-                style: TextStyle(color: Colors.grey, fontSize: 12),
-              ),
-              const Spacer(),
-              InkWell(
-                onTap: () {},
-                child: const Padding(
-                  padding: EdgeInsets.all(10),
-                  child: Icon(Icons.chat_outlined, size: 20),
+                const SizedBox(height: 10),
+                const Text(
+                  "World Cup critics are 'arrogant' and 'cannot accept' Qatar as hosts, says foreign minister",
+                  style: TextStyle(fontSize: 30),
                 ),
-              ),
-            ],
+                Row(
+                  children: const [
+                    Text(
+                      "Sunday 7 November 2022 19:49",
+                      style: TextStyle(color: Colors.blue),
+                    ),
+                    Spacer(),
+                  ],
+                ),
+              ],
+            ),
           ),
           Padding(
             padding: const EdgeInsets.symmetric(
@@ -70,41 +62,37 @@ class Sport extends StatelessWidget {
                         height: 120,
                         width: 120,
                         decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10),
-                            color: Colors.amber),
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                        child: Image.asset('images/2.jpg'),
                       ),
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.start,
                         children: [
                           const Padding(
-                            padding: EdgeInsets.all(10),
-                            child: Text('Euronews'),
+                            padding: EdgeInsets.all(0),
+                            child: Text(
+                              'Sport',
+                              style: TextStyle(
+                                  color: Colors.blue,
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.bold),
+                            ),
                           ),
                           const Padding(
                             padding: EdgeInsets.symmetric(
                                 horizontal: 10, vertical: 15),
                             child: Text(
-                              'On politics with Lisa\nLoureniani: Warren s\ngrowing crowds',
-                              style: TextStyle(fontSize: 22),
+                              'World Cup 2022: Hosting \ntournament allowed Qatar \nto make progress on worker \nrights, committee says',
+                              style: TextStyle(fontSize: 19),
                             ),
                           ),
                           Row(
                             children: const [
                               Text(
-                                'Health',
+                                "Sunday 7 November 2022 19:49",
                                 style: TextStyle(color: Colors.blue),
-                              ),
-                              SizedBox(width: 5),
-                              Icon(
-                                Icons.circle,
-                                color: Colors.grey,
-                                size: 10,
-                              ),
-                              SizedBox(width: 5),
-                              Text(
-                                '1m ago',
-                                style:
-                                    TextStyle(color: Colors.grey, fontSize: 12),
                               ),
                             ],
                           )

@@ -13,10 +13,10 @@ class Business extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
             child: Container(
-              height: 150,
-              width: double.infinity,
               decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(10), color: Colors.amber),
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: Image.asset('images/4.jpg'),
             ),
           ),
           Container(
@@ -24,37 +24,25 @@ class Business extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const Text('Bloomnig'),
+                const Text(
+                  'Business',
+                  style: TextStyle(
+                      color: Colors.blue,
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold),
+                ),
                 const SizedBox(height: 10),
                 const Text(
-                  'This is beautiful. I believe Flutter\n is the future for mobile development. Great job.',
+                  'Workers at Heathrow to strike in World Cup run-up',
                   style: TextStyle(fontSize: 30),
                 ),
                 Row(
-                  children: [
-                    const Text(
-                      'Health',
+                  children: const [
+                    Text(
+                      'Monday 7 November 2022 12:18',
                       style: TextStyle(color: Colors.blue),
                     ),
-                    const SizedBox(width: 5),
-                    const Icon(
-                      Icons.circle,
-                      color: Colors.grey,
-                      size: 10,
-                    ),
-                    const SizedBox(width: 5),
-                    const Text(
-                      '1m ago',
-                      style: TextStyle(color: Colors.grey, fontSize: 12),
-                    ),
-                    const Spacer(),
-                    InkWell(
-                      onTap: () {},
-                      child: const Padding(
-                        padding: EdgeInsets.all(10),
-                        child: Icon(Icons.chat_outlined, size: 20),
-                      ),
-                    ),
+                    Spacer(),
                   ],
                 ),
               ],
@@ -76,22 +64,29 @@ class Business extends StatelessWidget {
                         height: 120,
                         width: 120,
                         decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10),
-                            color: Colors.amber),
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                        child: Image.asset('images/1.jpg'),
                       ),
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: const [
                           Padding(
                             padding: EdgeInsets.all(10),
-                            child: Text('Business'),
+                            child: Text(
+                              'Business',
+                              style: TextStyle(
+                                  color: Colors.blue,
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.bold),
+                            ),
                           ),
                           Padding(
                             padding: EdgeInsets.symmetric(
                                 horizontal: 10, vertical: 15),
                             child: Text(
-                              'On politics with Lisa\nLoureniani: Warren s\ngrowing crowds',
-                              style: TextStyle(fontSize: 22),
+                              'Heathrow Airport could \nimpose a cap on passenger \nnumbers at busy times \naround Christmas, \nbosses have said.',
+                              style: TextStyle(fontSize: 19),
                             ),
                           ),
                         ],

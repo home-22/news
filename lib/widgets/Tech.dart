@@ -13,10 +13,11 @@ class Tech extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
             child: Container(
-              height: 150,
-              width: double.infinity,
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10), color: Colors.red),
+              child: Image.asset(
+                'images/9.jpg',
+              ),
             ),
           ),
           Container(
@@ -24,40 +25,33 @@ class Tech extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: const [
-                Text('Bloomnig'),
+                Text('Tech'),
                 SizedBox(height: 10),
                 Text(
-                  'This is beautiful.I believe Flutter is the future for mobile development. Great job.',
+                  'In an update for Apple devices, the company said the feature would be open to users in certain countries who sign up to its Twitter Blue service for \$7.99 (£7) per month.',
                   style: TextStyle(fontSize: 30),
                 ),
               ],
             ),
           ),
           Row(
-            children: [
-              const Text(
-                'Health',
+            children: const [
+              Text(
+                'Tech',
                 style: TextStyle(color: Colors.blue),
               ),
-              const SizedBox(width: 5),
-              const Icon(
+              SizedBox(width: 5),
+              Icon(
                 Icons.circle,
                 color: Colors.grey,
                 size: 10,
               ),
-              const SizedBox(width: 5),
-              const Text(
+              SizedBox(width: 5),
+              Text(
                 '1m ago',
                 style: TextStyle(color: Colors.grey, fontSize: 12),
               ),
-              const Spacer(),
-              InkWell(
-                onTap: () {},
-                child: const Padding(
-                  padding: EdgeInsets.all(10),
-                  child: Icon(Icons.chat_outlined, size: 20),
-                ),
-              ),
+              Spacer(),
             ],
           ),
         ],

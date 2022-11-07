@@ -16,11 +16,13 @@ class IconsWorld extends StatelessWidget {
             for (int i = 1; i < 8; i++)
               Container(
                 margin: const EdgeInsets.all(10),
-                height: 70,
-                width: 70,
-                decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(50), color: Colors.red),
-              ),
+                height: 100,
+                width: 100,
+                child: Image.asset(
+                  'images/3.jpg',
+                  fit: BoxFit.cover,
+                ),
+              )
           ],
         ),
       ),
