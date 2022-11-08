@@ -1,6 +1,7 @@
 // ignore_for_file: file_names
 
 import 'package:flutter/material.dart';
+import 'package:news/widgets/List_Data.dart';
 
 class Sport extends StatelessWidget {
   const Sport({Key? key}) : super(key: key);
@@ -14,10 +15,14 @@ class Sport extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
             child: Container(
+              height: 200,
+              width: double.infinity,
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(10),
+                borderRadius: BorderRadius.circular(20),
+                image: const DecorationImage(
+                  image: AssetImage('images/6.jpg'),
+                ),
               ),
-              child: Image.asset('images/2.jpg'),
             ),
           ),
           Container(
@@ -32,15 +37,15 @@ class Sport extends StatelessWidget {
                 const SizedBox(height: 10),
                 const Text(
                   "World Cup critics are 'arrogant' and 'cannot accept' Qatar as hosts, says foreign minister",
-                  style: TextStyle(fontSize: 30),
+                  style: TextStyle(fontSize: 29),
                 ),
+                const SizedBox(height: 10),
                 Row(
                   children: const [
                     Text(
                       "Sunday 7 November 2022 19:49",
                       style: TextStyle(color: Colors.blue),
                     ),
-                    Spacer(),
                   ],
                 ),
               ],
@@ -54,21 +59,22 @@ class Sport extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
-                for (int i = 0; i < 4; i++)
+                for (int i = 4; i < 8; i++)
                   Row(
                     children: [
                       Container(
                         margin: const EdgeInsets.all(5),
-                        height: 120,
-                        width: 120,
+                        height: 100,
+                        width: 100,
                         decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10),
+                          borderRadius: BorderRadius.circular(100),
+                          image: DecorationImage(
+                            image: AssetImage('images/$i.jpg'),
+                          ),
                         ),
-                        child: Image.asset('images/2.jpg'),
                       ),
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
-                        mainAxisAlignment: MainAxisAlignment.start,
                         children: [
                           const Padding(
                             padding: EdgeInsets.all(0),
@@ -80,18 +86,15 @@ class Sport extends StatelessWidget {
                                   fontWeight: FontWeight.bold),
                             ),
                           ),
-                          const Padding(
-                            padding: EdgeInsets.symmetric(
-                                horizontal: 10, vertical: 15),
-                            child: Text(
-                              'World Cup 2022: Hosting \ntournament allowed Qatar \nto make progress on worker \nrights, committee says',
-                              style: TextStyle(fontSize: 19),
-                            ),
+                          Padding(
+                            padding: const EdgeInsets.symmetric(
+                                horizontal: 5, vertical: 15),
+                            child: NameText[i],
                           ),
                           Row(
                             children: const [
                               Text(
-                                "Sunday 7 November 2022 19:49",
+                                "Sunday 8 November 2022 19:49",
                                 style: TextStyle(color: Colors.blue),
                               ),
                             ],

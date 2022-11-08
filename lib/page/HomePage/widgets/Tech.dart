@@ -13,10 +13,13 @@ class Tech extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
             child: Container(
+              height: 150,
+              width: double.infinity,
               decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(10), color: Colors.red),
-              child: Image.asset(
-                'images/9.jpg',
+                borderRadius: BorderRadius.circular(20),
+                image: const DecorationImage(
+                  image: AssetImage('images/9.jpg'),
+                ),
               ),
             ),
           ),
@@ -25,33 +28,27 @@ class Tech extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: const [
-                Text('Tech'),
+                Text(
+                  'Tech',
+                  style: TextStyle(color: Colors.blue),
+                ),
                 SizedBox(height: 10),
                 Text(
                   'In an update for Apple devices, the company said the feature would be open to users in certain countries who sign up to its Twitter Blue service for \$7.99 (£7) per month.',
-                  style: TextStyle(fontSize: 30),
+                  style: TextStyle(fontSize: 29),
                 ),
               ],
             ),
           ),
           Row(
-            children: const [
-              Text(
-                'Tech',
-                style: TextStyle(color: Colors.blue),
+            children: [
+              Container(
+                margin: const EdgeInsets.all(10),
+                child: const Text(
+                  "Sunday 8 November 2022 19:49",
+                  style: TextStyle(color: Colors.blue),
+                ),
               ),
-              SizedBox(width: 5),
-              Icon(
-                Icons.circle,
-                color: Colors.grey,
-                size: 10,
-              ),
-              SizedBox(width: 5),
-              Text(
-                '1m ago',
-                style: TextStyle(color: Colors.grey, fontSize: 12),
-              ),
-              Spacer(),
             ],
           ),
         ],

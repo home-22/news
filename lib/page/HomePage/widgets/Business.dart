@@ -1,6 +1,7 @@
 // ignore_for_file: file_names
 
 import 'package:flutter/material.dart';
+import 'package:news/widgets/List_Data.dart';
 
 class Business extends StatelessWidget {
   const Business({Key? key}) : super(key: key);
@@ -13,10 +14,14 @@ class Business extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
             child: Container(
+              height: 200,
+              width: double.infinity,
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(10),
+                borderRadius: BorderRadius.circular(20),
+                image: const DecorationImage(
+                  image: AssetImage('images/1.jpg'),
+                ),
               ),
-              child: Image.asset('images/4.jpg'),
             ),
           ),
           Container(
@@ -34,15 +39,15 @@ class Business extends StatelessWidget {
                 const SizedBox(height: 10),
                 const Text(
                   'Workers at Heathrow to strike in World Cup run-up',
-                  style: TextStyle(fontSize: 30),
+                  style: TextStyle(fontSize: 29),
                 ),
+                const SizedBox(height: 10),
                 Row(
                   children: const [
                     Text(
-                      'Monday 7 November 2022 12:18',
+                      'Monday 8 November 2022 12:18',
                       style: TextStyle(color: Colors.blue),
                     ),
-                    Spacer(),
                   ],
                 ),
               ],
@@ -56,23 +61,25 @@ class Business extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
-                for (int i = 0; i < 4; i++)
+                for (int i = 4; i < 8; i++)
                   Row(
                     children: [
                       Container(
                         margin: const EdgeInsets.all(5),
-                        height: 120,
-                        width: 120,
+                        height: 100,
+                        width: 100,
                         decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10),
+                          borderRadius: BorderRadius.circular(100),
+                          image: DecorationImage(
+                            image: AssetImage('images/$i.jpg'),
+                          ),
                         ),
-                        child: Image.asset('images/1.jpg'),
                       ),
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
-                        children: const [
-                          Padding(
-                            padding: EdgeInsets.all(10),
+                        children: [
+                          const Padding(
+                            padding: EdgeInsets.all(0),
                             child: Text(
                               'Business',
                               style: TextStyle(
@@ -82,13 +89,18 @@ class Business extends StatelessWidget {
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsets.symmetric(
-                                horizontal: 10, vertical: 15),
-                            child: Text(
-                              'Heathrow Airport could \nimpose a cap on passenger \nnumbers at busy times \naround Christmas, \nbosses have said.',
-                              style: TextStyle(fontSize: 19),
-                            ),
+                            padding: const EdgeInsets.symmetric(
+                                horizontal: 5, vertical: 15),
+                            child: NameText[i],
                           ),
+                          Row(
+                            children: const [
+                              Text(
+                                "Sunday 8 November 2022 19:49",
+                                style: TextStyle(color: Colors.blue),
+                              ),
+                            ],
+                          )
                         ],
                       ),
                     ],

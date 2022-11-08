@@ -1,12 +1,11 @@
 // ignore_for_file: file_names
 
 import 'package:flutter/material.dart';
-import 'package:news/widgets/Business.dart';
-import 'package:news/widgets/NavigatorBar.dart';
-import 'package:news/widgets/Sport.dart';
-import 'package:news/widgets/Tech.dart';
-
-import 'package:news/widgets/World.dart';
+import 'package:news/page/HomePage/widgets/Business.dart';
+import 'package:news/page/HomePage/widgets/NavigatorBar.dart';
+import 'package:news/page/HomePage/widgets/Sport.dart';
+import 'package:news/page/HomePage/widgets/Tech.dart';
+import 'package:news/page/HomePage/widgets/World.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);

@@ -2,6 +2,7 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:news/widgets/List_Data.dart';
 
 class Categories extends StatelessWidget {
   const Categories({Key? key}) : super(key: key);
@@ -72,11 +73,7 @@ class Categories extends StatelessWidget {
                         ),
                         child: Row(
                           children: [
-                            const Text(
-                              'For You',
-                              style: TextStyle(
-                                  fontSize: 24, fontWeight: FontWeight.bold),
-                            ),
+                            SizedBox(child: TextName[i]),
                             const Spacer(),
                             InkWell(
                               onTap: () {},

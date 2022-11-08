@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:news/page/HomePage.dart';
+import 'package:news/page/HomePage/HomePage.dart';
 import 'package:news/widgets/Categories.dart';
 
 void main() {

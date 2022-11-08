@@ -13,16 +13,14 @@ class IconsWorld extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
         child: Row(
           children: [
-            for (int i = 1; i < 8; i++)
-              Container(
-                margin: const EdgeInsets.all(10),
-                height: 100,
-                width: 100,
-                child: Image.asset(
-                  'images/3.jpg',
-                  fit: BoxFit.cover,
+            for (int i = 1; i < 9; i++)
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 10),
+                child: CircleAvatar(
+                  radius: 50,
+                  backgroundImage: AssetImage('images/$i.jpg'),
                 ),
-              )
+              ),
           ],
         ),
       ),
