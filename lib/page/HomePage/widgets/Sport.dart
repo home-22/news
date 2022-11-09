@@ -43,7 +43,7 @@ class Sport extends StatelessWidget {
                 Row(
                   children: const [
                     Text(
-                      "Sunday 7 November 2022 19:49",
+                      "Sunday 9 November 2022 16:50",
                       style: TextStyle(color: Colors.blue),
                     ),
                   ],
@@ -94,7 +94,7 @@ class Sport extends StatelessWidget {
                           Row(
                             children: const [
                               Text(
-                                "Sunday 8 November 2022 19:49",
+                                "Sunday 9 November 2022 16:50",
                                 style: TextStyle(color: Colors.blue),
                               ),
                             ],

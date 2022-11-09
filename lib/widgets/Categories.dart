@@ -73,7 +73,9 @@ class Categories extends StatelessWidget {
                         ),
                         child: Row(
                           children: [
-                            SizedBox(child: TextName[i]),
+                            SizedBox(
+                              child: TextName[i],
+                            ),
                             const Spacer(),
                             InkWell(
                               onTap: () {},

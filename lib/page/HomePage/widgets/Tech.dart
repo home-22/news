@@ -45,7 +45,7 @@ class Tech extends StatelessWidget {
               Container(
                 margin: const EdgeInsets.all(10),
                 child: const Text(
-                  "Sunday 8 November 2022 19:49",
+                  "Sunday 9 November 2022 16:50",
                   style: TextStyle(color: Colors.blue),
                 ),
               ),
